@@ -4,7 +4,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "next build && next export && gh-pages -d out"
+
+
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -13,5 +16,8 @@
     "react-dom": "latest",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
